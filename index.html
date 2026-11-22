@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#14161F">
+<title>OUT OF FRIENDS!｜友情已售罄</title>
+<meta name="description" content="進階網路程式設計期末報告提案：OUT OF FRIENDS!（友情已售罄），一款 React.js + Django 多人網頁協作遊戲。">
+<meta property="og:title" content="OUT OF FRIENDS!｜友情已售罄">
+<meta property="og:image" content="assets/cover.jpg">
+<style>
+:root{--bg:#14161F;--sf:#1F222D;--ln:#2E3240;--fg:#F6F4EE;--mu:#B4B8C4;--ac:#FF5A36;--r:12px;--rc:28px;
+--font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);min-height:100vh;display:flex;justify-content:center;padding:max(24px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom))}
+main{width:100%;max-width:880px;display:flex;flex-direction:column;gap:16px}
+.cover{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--rc);border:1px solid var(--ln);background:#000}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.1;font-weight:800;margin-top:8px}
+h1 span{color:var(--ac)}
+.lead{color:var(--mu);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
+a.card{display:flex;align-items:center;gap:16px;padding:16px;border-radius:var(--rc);background:var(--sf);border:1px solid var(--ln);color:inherit;text-decoration:none;min-height:88px}
+a.card:hover{border-color:var(--ac)}
+a.card:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.ic{width:56px;height:56px;border-radius:var(--r);background:var(--ac);color:var(--bg);display:flex;align-items:center;justify-content:center;flex:none}
+.ic svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.t{font-weight:700;font-size:17px}.d{color:var(--mu);font-size:14px;line-height:1.45}
+h2{font-size:14px;color:var(--mu);font-weight:600;margin-top:8px}
+.dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.dl a{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:var(--r);background:var(--sf);border:1px solid var(--ln);color:var(--fg);text-decoration:none;font-weight:600;font-size:15px}
+.dl a:hover{border-color:var(--ac)}.dl a:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.dl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+footer{color:var(--mu);font-size:13px;margin-top:8px}
+@media (max-width:420px){.dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <img class="cover" src="assets/cover.jpg" alt="OUT OF FRIENDS! 簡報封面：四個像素角色走進畫面">
+  <h1>OUT OF FRIENDS!<span>｜</span>友情已售罄</h1>
+  <p class="lead">進階網路程式設計　期末報告提案 · 傅羿綸</p>
+
+  <div class="grid">
+    <a class="card" href="slides.html">
+      <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+      <span><span class="t">播放簡報</span><br><span class="d">含所有動畫。→ 或空白鍵下一步，F 全螢幕，N 備忘稿</span></span>
+    </a>
+    <a class="card" href="notes.html">
+      <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></span>
+      <span><span class="t">手機備忘稿</span><br><span class="d">講稿、計時器與每頁目標時間，可編輯、可調字級與配色</span></span>
+    </a>
+  </div>
+
+  <h2>下載</h2>
+  <div class="dl">
+    <a href="files/presentation.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>PDF</a>
+    <a href="files/presentation.pptx" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>PowerPoint</a>
+    <a href="files/script.md" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>講稿</a>
+  </div>
+
+  <footer>React.js + Django 多人網頁協作遊戲提案。所有網頁皆可離線使用。</footer>
+</main>
+</body>
+</html>
